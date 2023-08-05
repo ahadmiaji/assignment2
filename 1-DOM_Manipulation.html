@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <button id="changeContentButton">Change Content</button>
+    <div id="contentDiv">Press the button to add content</div>
+
+    <script>
+        
+        const button = document.getElementById('changeContentButton');
+        const contentDiv = document.getElementById('contentDiv');
+
+        
+        button.addEventListener('click', function() {
+            
+            contentDiv.innerHTML = '<img src="img_lights.jpg" alt="New Image">';
+        });
+    </script>
+</body>
+</html>

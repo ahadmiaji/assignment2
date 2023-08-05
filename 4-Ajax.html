@@ -1,0 +1,13 @@
+<script>
+
+async function fetchData(URL){
+      const urlResponse = await fetch(URL);
+      const processedData = await urlResponse.json();
+      document.write(JSON.stringify(processedData))
+    }
+
+    const URL = "https://jsonplaceholder.typicode.com/posts";
+    fetchData(URL);
+
+
+</script>

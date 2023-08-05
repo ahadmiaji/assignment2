@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title>Image Switcher</title>    
+
+</head>
+   
+<body>  
+    
+    <h1>Image Switcher</h1>
+    
+    <img id="image" src="image1.jpeg" alt="Image 1">
+    
+    <button onclick="switchToImage1()">Switch to Image 1</button>
+    <button onclick="switchToImage2()">Switch to Image 2</button>
+
+    <script>
+        function switchToImage1() {
+            const image = document.getElementById('image');
+            image.src = 'image1.jpeg';
+            image.alt = 'Image 1';
+        }
+
+        function switchToImage2() {
+            const image = document.getElementById('image');
+            image.src = 'image2.jpg';
+            image.alt = 'Image 2';
+        }
+    </script>
+
+</body>
+</html>
